@@ -17,8 +17,9 @@ public class ArrayCyclicOne {
 
         temp = new int[n];
 
-        for (int i = 0; i < k; i++)
+        for (int i = 0; i < k; i++){
             temp[i] = arr[i];
+        }
 
         int x = k;
         for (int i = 0; x < n; i++) {
@@ -27,8 +28,9 @@ public class ArrayCyclicOne {
 
         x = 0;
 
-        for (int i = n - k; i < n; i++)
+        for (int i = n - k; i < n; i++){
             arr[i] = temp[x++];
+        }
 
 
         for (int i = 0; i < 7; i++) {
